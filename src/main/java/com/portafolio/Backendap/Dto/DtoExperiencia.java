@@ -1,8 +1,7 @@
 
 package com.portafolio.Backendap.Dto;
 
-import jakarta.validation.constraints.NotBlank;
-
+import javax.validation.constraints.NotBlank;
 
 public class DtoExperiencia {
     @NotBlank
@@ -10,7 +9,7 @@ public class DtoExperiencia {
     @NotBlank
     private String descripcionE;
     
-    //Constructor
+    //Constructores
 
     public DtoExperiencia() {
     }
@@ -19,8 +18,7 @@ public class DtoExperiencia {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
-    
-    //Getters y Setters
+    //Getters & Setters
 
     public String getNombreE() {
         return nombreE;
@@ -37,4 +35,5 @@ public class DtoExperiencia {
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
     }
+    
 }

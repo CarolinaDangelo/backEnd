@@ -9,6 +9,7 @@ com\portafolio\Backendap\Repository\IPersonaRepository.class
 com\portafolio\Backendap\Security\Enums\RolNombre.class
 com\portafolio\Backendap\Security\jwt\JwtProvider.class
 com\portafolio\Backendap\Security\Repository\iRolRepository.class
+org\springframework\security\config\annotation\web\configuration\WebSecurityConfigurerAdapter.class
 com\portafolio\Backendap\Security\Service\UserDetailsImpl.class
 com\portafolio\Backendap\Security\Service\RolService.class
 com\portafolio\Backendap\Security\Entity\UsuarioPrincipal.class

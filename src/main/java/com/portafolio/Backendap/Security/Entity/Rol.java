@@ -2,24 +2,23 @@
 package com.portafolio.Backendap.Security.Entity;
 
 import com.portafolio.Backendap.Security.Enums.RolNombre;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.validation.constraints.NotNull;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+
 
 @Entity
 public class Rol {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy =GenerationType.IDENTITY)
     private int id;
     @NotNull
     @Enumerated(EnumType.STRING)
     private RolNombre rolNombre;
-    
-    //Constructor
 
     public Rol() {
     }
@@ -27,8 +26,6 @@ public class Rol {
     public Rol(RolNombre rolNombre) {
         this.rolNombre = rolNombre;
     }
-    
-    //Getters y Setters
 
     public int getId() {
         return id;

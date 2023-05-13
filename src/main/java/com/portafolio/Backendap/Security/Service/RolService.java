@@ -4,8 +4,8 @@ package com.portafolio.Backendap.Security.Service;
 import com.portafolio.Backendap.Security.Entity.Rol;
 import com.portafolio.Backendap.Security.Enums.RolNombre;
 import com.portafolio.Backendap.Security.Repository.iRolRepository;
-import jakarta.transaction.Transactional;
 import java.util.Optional;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
